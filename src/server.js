@@ -4,7 +4,7 @@ import pino from 'pino-http';
 import 'dotenv/config';
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT;
 
 // Middleware для парсингу JSON
 app.use(express.json());
